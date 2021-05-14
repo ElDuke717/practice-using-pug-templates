@@ -5,7 +5,7 @@ const { recipes } = require('../data/data.json');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // 1. Pass all recipe data to 'index' template
-  res.render('index');
+  res.render('index', { recipes });
 });
 
 /* GET recipe page. */
